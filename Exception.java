@@ -1,30 +1,21 @@
-class UDException extends Exception
-{
-public String message;
-public UDException(String s)
-{
-message=s
+class MyException extends Exception{
+     public MyException(String Msg){
+	super(Msg);
+      }
 }
-class Abc{
-void Add()
-{
-int i,sum=0;
-try{
-for(i=10;i<=100;i=i+10)
-{
-sum=sum+i;
-}
-if(sum>100)
-throw new UDException("Addition exceeds 100");
-}
-else
-{
-System.out.println(sum);
-}
-}
-}
-catch(UDException e)
-{
-print(e.message)
-}
+MyException obj = new MyException("This is MyException!!!");
+obj.getMEssage();
+
+java.lang
+
+public class Exception{
+    private String message;
+    }
+ 
+    public Exception(String message){
+       this.message=message;
+    }
+    public String getMessage){
+       return message;
+    }
 }
